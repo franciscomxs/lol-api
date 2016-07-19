@@ -30,10 +30,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "pry"
-  spec.add_development_dependency "vcr"
-  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "pry", "~> 0.10.3"
+  spec.add_development_dependency "vcr", "~> 3.0.3"
+  spec.add_development_dependency "webmock", "~> 1.22.3"
 
-  spec.add_dependency "faraday"
-  spec.add_dependency "activesupport"
+  spec.add_dependency "faraday", "~> 0.9.2"
+  spec.add_dependency "activesupport", "~> 5.0.0"
 end
