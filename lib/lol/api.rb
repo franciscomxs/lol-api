@@ -1,6 +1,6 @@
 require "lol/api/version"
 require "lol/api/configuration"
-require "lol/api/request"
+require "lol/api/current_game"
 
 module LOL
   module Api
