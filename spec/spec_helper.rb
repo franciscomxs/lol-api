@@ -11,3 +11,7 @@ RSpec.configure do |config|
 end
 
 Dir[File.dirname(__FILE__) + '/support/**/*.rb'].each {|file| require file }
+
+LOL::Api.configure do |config|
+  config.api_key = ENV['API_KEY']
+end
