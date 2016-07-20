@@ -1,6 +1,7 @@
 module LOL
   module Api
     class Response
+      require 'active_support/core_ext/object/blank'
       require 'active_support/json/decoding'
       require 'active_support/core_ext/hash/keys'
       require 'active_support/core_ext/string/inflections'
