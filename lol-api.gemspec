@@ -34,7 +34,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr", "~> 3.0.3"
   spec.add_development_dependency "webmock", "~> 1.22.3"
   spec.add_development_dependency "minitest", "~> 5.9.0"
-  spec.add_development_dependency "simplecov", "~> 0.11.2"
+  spec.add_development_dependency "simplecov", "~> 0.12.0"
+  spec.add_development_dependency "coveralls", "~> 0.8.14"
 
   spec.add_dependency "faraday", "~> 0.9.2"
   spec.add_dependency "activesupport", "~> 5.0.0"
