@@ -4,6 +4,7 @@ require "lol/api/endpoints/current_game"
 require "lol/api/endpoints/summoner"
 require "lol/api/endpoints/summoner/by_name"
 require "lol/api/endpoints/summoner/name"
+require "lol/api/endpoints/summoner/runes"
 
 module LOL
   module Api
