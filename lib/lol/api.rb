@@ -6,6 +6,7 @@ require "lol/api/endpoints/summoner/by_name"
 require "lol/api/endpoints/summoner/name"
 require "lol/api/endpoints/summoner/runes"
 require "lol/api/endpoints/summoner/masteries"
+require "lol/api/endpoints/champion"
 
 module LOL
   module Api
