@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://br.api.pvp.net/api/lol/br/v1.4/summoner/4691228/masteries/?api_key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 21 Jul 2016 03:21:03 GMT
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVlRbBAkHX0YdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMAEI+FxQJFgBuHBZMDFwOXQcWahgSEw5VXF4BEytTQmtJCVBFRwcUCgdDPhdAFAgaAh9VF1IFWQRSVAADTUtSFBEAXFYBUVBSVFVQUlVVUQFSEk5eA1RLUW8=
+      X-Rate-Limit-Count:
+      - 1:10,1:600
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"4691228":{"summonerId":4691228,"pages":[{"id":7342584,"name":"Strength
+        of Ages","current":false,"masteries":[{"id":6343,"rank":1},{"id":6311,"rank":5},{"id":6242,"rank":1},{"id":6221,"rank":1},{"id":6331,"rank":5},{"id":6321,"rank":1},{"id":6262,"rank":1},{"id":6212,"rank":5},{"id":6231,"rank":5},{"id":6252,"rank":5}]},{"id":7342585,"name":"Thunderlord''s
+        [AP]","current":true,"masteries":[{"id":6114,"rank":5},{"id":6343,"rank":1},{"id":6311,"rank":5},{"id":6123,"rank":1},{"id":6331,"rank":5},{"id":6142,"rank":1},{"id":6322,"rank":1},{"id":6134,"rank":5},{"id":6362,"rank":1},{"id":6352,"rank":5}]},{"id":7342586,"name":"Thunderlord''s
+        [AD]","current":false,"masteries":[{"id":6131,"rank":5},{"id":6343,"rank":1},{"id":6311,"rank":5},{"id":6123,"rank":1},{"id":6111,"rank":5},{"id":6331,"rank":5},{"id":6142,"rank":1},{"id":6323,"rank":1},{"id":6352,"rank":5},{"id":6362,"rank":1}]},{"id":7342587,"name":"Thunderlord''s
+        [TANK]","current":false,"masteries":[{"id":6241,"rank":1},{"id":6343,"rank":1},{"id":6311,"rank":5},{"id":6221,"rank":1},{"id":6331,"rank":5},{"id":6323,"rank":1},{"id":6212,"rank":5},{"id":6231,"rank":5},{"id":6362,"rank":1},{"id":6352,"rank":5}]},{"id":7342588,"name":"Fervor
+        [AD]","current":false,"masteries":[{"id":6241,"rank":1},{"id":6131,"rank":5},{"id":6221,"rank":1},{"id":6123,"rank":1},{"id":6111,"rank":5},{"id":6142,"rank":1},{"id":6162,"rank":1},{"id":6212,"rank":5},{"id":6231,"rank":5},{"id":6151,"rank":5}]},{"id":7342589,"name":"Deathfire
+        [AP]","current":false,"masteries":[{"id":6241,"rank":1},{"id":6114,"rank":5},{"id":6221,"rank":1},{"id":6123,"rank":1},{"id":6142,"rank":1},{"id":6212,"rank":5},{"id":6231,"rank":5},{"id":6154,"rank":5},{"id":6134,"rank":5},{"id":6164,"rank":1}]},{"id":7342590,"name":"Undying
+        [TANK]","current":false,"masteries":[{"id":6343,"rank":1},{"id":6311,"rank":5},{"id":6251,"rank":5},{"id":6242,"rank":1},{"id":6221,"rank":1},{"id":6331,"rank":5},{"id":6261,"rank":1},{"id":6323,"rank":1},{"id":6212,"rank":5},{"id":6231,"rank":5}]},{"id":7342591,"name":"Bond
+        of Stone [TANK]","current":false,"masteries":[{"id":6342,"rank":1},{"id":6311,"rank":5},{"id":6242,"rank":1},{"id":6221,"rank":1},{"id":6263,"rank":1},{"id":6322,"rank":1},{"id":6332,"rank":5},{"id":6212,"rank":5},{"id":6231,"rank":5},{"id":6252,"rank":5}]}]}}'
+    http_version: 
+  recorded_at: Thu, 21 Jul 2016 03:21:03 GMT
+recorded_with: VCR 3.0.3
