@@ -1,7 +1,7 @@
 module LOL
   module Api
     module Endpoints
-      class CurrentGame
+      class CurrentGame < LOL::Api::Endpoint
         require "lol/api/request"
 
         attr_accessor :region, :summoner_id
@@ -21,7 +21,7 @@ module LOL
         private
 
         def endpoint
-          "/observer-mode/rest/consumer/getSpectatorGameInfo/#{region}/#{summoner_id}?api_key=#{LOL::Api.configuration.api_key}"
+          "/observer-mode/rest/consumer/getSpectatorGameInfo/#{region}/#{summoner_id}?#{query}"
         end
       end
     end

@@ -2,7 +2,7 @@ module LOL
   module Api
     module Endpoints
       class Summoner
-        class ByName
+        class ByName < LOL::Api::Endpoint
           require "lol/api/request"
 
           attr_accessor :region, :summoner_names
@@ -20,7 +20,7 @@ module LOL
           end
 
           def endpoint
-            "/api/lol/br/v1.4/summoner/by-name/#{summoner_names}?api_key=#{LOL::Api.configuration.api_key}"
+            "/api/lol/br/v1.4/summoner/by-name/#{summoner_names}?#{query}"
           end
         end
       end

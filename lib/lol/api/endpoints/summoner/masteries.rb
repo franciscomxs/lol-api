@@ -2,7 +2,7 @@ module LOL
   module Api
     module Endpoints
       class Summoner
-        class Masteries
+        class Masteries < LOL::Api::Endpoint
           require "lol/api/request"
 
           attr_accessor :region, :summoner_ids
@@ -20,7 +20,7 @@ module LOL
           end
 
           def endpoint
-            "/api/lol/br/v1.4/summoner/#{summoner_ids}/masteries/?api_key=#{LOL::Api.configuration.api_key}"
+            "/api/lol/br/v1.4/summoner/#{summoner_ids}/masteries/?#{query}"
           end
         end
       end

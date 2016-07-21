@@ -1,7 +1,7 @@
 module LOL
   module Api
     module Endpoints
-      class Summoner
+      class Summoner < LOL::Api::Endpoint
         require "lol/api/request"
 
         attr_accessor :region, :summoner_ids
@@ -21,7 +21,7 @@ module LOL
         private
 
         def endpoint
-          "/api/lol/br/v1.4/summoner/#{summoner_ids}?api_key=#{LOL::Api.configuration.api_key}"
+          "/api/lol/br/v1.4/summoner/#{summoner_ids}?#{query}"
         end
       end
     end
