@@ -1,7 +1,7 @@
 module LOL
   module Api
     module Endpoints
-      module Summoner
+      class Summoner
         class ByName
           require "lol/api/request"
 
