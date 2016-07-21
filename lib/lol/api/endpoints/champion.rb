@@ -6,11 +6,11 @@ module LOL
 
         attr_accessor :region, :champion_id, :free_to_play
 
-        def self.call(region:, champion_id: '', free_to_play: '')
+        def self.call(region:, champion_id: '', free_to_play: false)
           new(region: region, champion_id: champion_id, free_to_play: free_to_play).data
         end
 
-        def initialize(region:, champion_id:, free_to_play:)
+        def initialize(region:, champion_id: '', free_to_play: false)
           @region, @champion_id, @free_to_play = region, champion_id, free_to_play
         end
 
@@ -27,7 +27,7 @@ module LOL
         def params
           # The API only accepts 'true' as value
           super.tap do |hash|
-            hash.merge!(freeToPlay: 'true') if free_to_play == 'true'
+            hash.merge!(freeToPlay: 'true') if free_to_play
           end
         end
       end
