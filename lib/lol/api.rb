@@ -10,6 +10,7 @@ require "lol/api/endpoints/summoner/masteries"
 require "lol/api/endpoints/champion"
 require "lol/api/endpoints/champion_mastery/champion"
 require "lol/api/endpoints/champion_mastery/champions"
+require "lol/api/endpoints/champion_mastery/score"
 
 module LOL
   module Api
