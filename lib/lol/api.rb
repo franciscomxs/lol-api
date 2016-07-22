@@ -11,6 +11,7 @@ require "lol/api/endpoints/champion"
 require "lol/api/endpoints/champion_mastery/champion"
 require "lol/api/endpoints/champion_mastery/champions"
 require "lol/api/endpoints/champion_mastery/score"
+require "lol/api/endpoints/champion_mastery/top_champions"
 
 module LOL
   module Api
