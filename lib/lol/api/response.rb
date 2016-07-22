@@ -16,9 +16,18 @@ module LOL
       private
 
       def json(body)
-        ActiveSupport::JSON.decode(body).
-          deep_transform_keys(&:underscore).
+        prepare(ActiveSupport::JSON.decode(body))
+      end
+
+      def prepare(json)
+        if json.is_a?(Hash)
+          json.deep_transform_keys(&:underscore).
           with_indifferent_access
+        elsif json.is_a?(Array)
+          json.map { |j| prepare(j) }
+        else
+          prepare({'data' => json})
+        end
       end
     end
   end
