@@ -42,52 +42,61 @@ You can get your `API_KEY` here: https://developer.riotgames.com/
 
 #### Champion
 
-Get all champions
 ```ruby
 LOL::Api::Endpoints::Champion.(region: region)
 ```
-
-Get champion by id
 
 ```ruby
 LOL::Api::Endpoints::Champion.(region: region, champion_id: champion_id)
 ```
 
-Get champions on free rotation
-
 ```ruby
 LOL::Api::Endpoints::Champion.(region: region, free_to_play: true)
 ```
 
-#### Current Game
+#### Champion Mastery
 
-Get summoner's current game data
+```ruby
+LOL::Api::Endpoints::ChampionMastery::Champion.(region: region, summoner_id: summoner_id, champion_id: champion_id)
+```
+
+```ruby
+LOL::Api::Endpoints::ChampionMastery::Champions.(region: region, summoner_id: summoner_id)
+```
+
+```ruby
+LOL::Api::Endpoints::ChampionMastery::Score.(region: region, summoner_id: summoner_id)
+```
+
+```ruby
+LOL::Api::Endpoints::ChampionMastery::TopChampions.(region: region, summoner_id: summoner_id)
+```
+
+#### Current Game
 
 ```ruby
 LOL::Api::Endpoints::CurrentGame.(region: region, summoner_id: summoner_id)
 ```
 
-#### Summoner
+#### Featured Games
 
-Get summoner by id
+```ruby
+LOL::Api::Endpoints::FeaturedGames.(region: region)
+```
+
+#### Summoner
 
 ```ruby
 LOL::Api::Endpoints::Summoner.(region: region, summoner_id: summoner_id)
 ```
 
-Get summoner by name
-
 ```ruby
 LOL::Api::Endpoints::Summoner::ByName.(region: region, summoner_name: summoner_name)
 ```
 
-Get summoner's masteries
-
 ```ruby
 LOL::Api::Endpoints::Summoner::Masteries.(region: region, summoner_ids: summoner_ids)
 ```
-
-Get summoner's runes
 
 ```ruby
 LOL::Api::Endpoints::Summoner::Runes.(region: region, summoner_ids: summoner_ids)
