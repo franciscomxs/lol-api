@@ -16,7 +16,7 @@ module LOL
           end
 
           def endpoint
-            "/championmastery/location/#{region}/player/#{summoner_id}/champion/#{champion_id}?#{query}"
+            "/championmastery/location/#{normalized_region}/player/#{summoner_id}/champion/#{champion_id}?#{query}"
           end
         end
       end

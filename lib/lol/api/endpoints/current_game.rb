@@ -17,7 +17,7 @@ module LOL
         private
 
         def endpoint
-          "/observer-mode/rest/consumer/getSpectatorGameInfo/#{region}/#{summoner_id}?#{query}"
+          "/observer-mode/rest/consumer/getSpectatorGameInfo/#{normalized_region}/#{summoner_id}?#{query}"
         end
       end
     end

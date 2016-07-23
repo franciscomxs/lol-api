@@ -17,7 +17,7 @@ module LOL
         private
 
         def endpoint
-          "/api/lol/#{region}/v1.3/game/by-summoner/#{summoner_id}/recent?#{query}"
+          "/api/lol/#{normalized_region}/v1.3/game/by-summoner/#{summoner_id}/recent?#{query}"
         end
       end
     end

@@ -18,7 +18,7 @@ module LOL
           private
 
           def endpoint
-            "/api/lol/br/v2.5/league/challenger?#{query}"
+            "/api/lol/#{normalized_region}/v2.5/league/challenger?#{query}"
           end
 
           def params

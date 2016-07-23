@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe LOL::Api::Endpoints::ChampionMastery::Score do
-  let(:region) { 'BR1' }
+  let(:region) { :br }
   let(:summoner_id) { '4691228' }
 
   describe '.call' do

@@ -17,7 +17,7 @@ module LOL
         private
 
         def endpoint
-          "/api/lol/#{region}/v1.2/champion/#{champion_id}?#{query}"
+          "/api/lol/#{normalized_region}/v1.2/champion/#{champion_id}?#{query}"
         end
 
         def params

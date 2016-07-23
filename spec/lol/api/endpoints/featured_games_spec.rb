@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe LOL::Api::Endpoints::FeaturedGames do
-  let(:region) { 'BR1' }
+  let(:region) { :br }
 
   describe '.call' do
     before do

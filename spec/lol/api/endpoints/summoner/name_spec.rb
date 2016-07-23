@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe LOL::Api::Endpoints::Summoner::Name do
-  let(:region) { 'BR1' }
+  let(:region) { :br }
   let(:summoner_ids) { '4691228' }
 
   describe '.call' do

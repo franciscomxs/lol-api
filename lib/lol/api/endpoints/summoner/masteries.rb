@@ -16,7 +16,7 @@ module LOL
           end
 
           def endpoint
-            "/api/lol/br/v1.4/summoner/#{summoner_ids}/masteries/?#{query}"
+            "/api/lol/#{normalized_region}/v1.4/summoner/#{summoner_ids}/masteries/?#{query}"
           end
         end
       end

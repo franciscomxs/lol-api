@@ -37,6 +37,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "simplecov", "~> 0.12.0"
   spec.add_development_dependency "coveralls", "~> 0.8.14"
 
-  spec.add_dependency "faraday", "~> 0.9.2"
+  spec.add_dependency "httparty", "~> 0.11.0"
   spec.add_dependency "activesupport", "~> 5.0.0"
 end

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe LOL::Api::Endpoints::League::Challenger do
-  let(:region) { 'BR1' }
+  let(:region) { :br }
   let(:type) { 'RANKED_SOLO_5x5' }
 
   describe '.call' do

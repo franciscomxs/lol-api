@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe LOL::Api::Endpoints::Champion do
-  let(:region) { 'BR' }
+  let(:region) { :br }
   let(:champion_id) { '1' }
   let(:free_to_play) { 'true' }
 

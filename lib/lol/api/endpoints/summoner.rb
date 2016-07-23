@@ -17,7 +17,7 @@ module LOL
         private
 
         def endpoint
-          "/api/lol/br/v1.4/summoner/#{summoner_ids}?#{query}"
+          "/api/lol/#{normalized_region}/v1.4/summoner/#{summoner_ids}?#{query}"
         end
       end
     end

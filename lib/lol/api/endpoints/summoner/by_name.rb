@@ -16,7 +16,7 @@ module LOL
           end
 
           def endpoint
-            "/api/lol/br/v1.4/summoner/by-name/#{summoner_names}?#{query}"
+            "/api/lol/#{normalized_region}/v1.4/summoner/by-name/#{summoner_names}?#{query}"
           end
         end
       end
