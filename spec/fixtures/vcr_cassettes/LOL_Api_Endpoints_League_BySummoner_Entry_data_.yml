@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://br.api.pvp.net/api/lol/br/v2.5/league/by-summoner/4691228/entry?api_key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 23 Jul 2016 04:02:19 GMT
+      Vary:
+      - Accept-Encoding
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTUlBSDwIDU0YdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOA0dYa0kIXlpvTR0RB1cLVwxFZBtEAUsMPR4NVgMDQ1I9SQFBHkMRDA9YX1IUOB5NQBcLDg1eB0orXEtJbhwAVxVDGBNKI3NjSERPCB0ASFFMBwECUlQIBARTSk5THEBcUgBaBgQEAwwAUFIGUFYCFU0AAlRAVTk=
+      X-Rate-Limit-Count:
+      - 1:10,2:600
+      Content-Length:
+      - '221'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"4691228":[{"name":"Rengar''s Elite","tier":"SILVER","queue":"RANKED_SOLO_5x5","entries":[{"playerOrTeamId":"4691228","playerOrTeamName":"Pirokaun","division":"IV","leaguePoints":0,"wins":20,"losses":21,"isHotStreak":false,"isVeteran":false,"isFreshBlood":false,"isInactive":false}]}]}'
+    http_version: 
+  recorded_at: Sat, 23 Jul 2016 04:02:19 GMT
+recorded_with: VCR 3.0.3
