@@ -2,8 +2,6 @@ module LOL
   module Api
     module Endpoints
       class Summoner < LOL::Api::Endpoint
-        require "lol/api/request"
-
         attr_accessor :summoner_ids
 
         def self.call(region:, summoner_ids:)

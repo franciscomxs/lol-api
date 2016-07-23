@@ -4,8 +4,6 @@ module LOL
       module League
         class BySummoner
           class Entry < LOL::Api::Endpoint
-            require "lol/api/request"
-
             attr_accessor :summoner_id
 
             def self.call(region:, summoner_id:)

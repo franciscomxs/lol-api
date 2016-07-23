@@ -3,8 +3,6 @@ module LOL
     module Endpoints
       module League
         class Challenger < LOL::Api::Endpoint
-          require "lol/api/request"
-
           attr_accessor :type
 
           def self.call(region:, type:)

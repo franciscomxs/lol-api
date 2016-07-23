@@ -2,8 +2,6 @@ module LOL
   module Api
     module Endpoints
       class FeaturedGames < LOL::Api::Endpoint
-        require "lol/api/request"
-
         def self.call(region:)
           new(region: region).data
         end

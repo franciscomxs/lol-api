@@ -3,8 +3,6 @@ module LOL
     module Endpoints
       class ChampionMastery
         class TopChampions < LOL::Api::Endpoint
-          require "lol/api/request"
-
           attr_accessor :summoner_id, :count
 
           def self.call(region:, summoner_id:, count: false)

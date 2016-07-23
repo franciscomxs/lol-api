@@ -2,8 +2,6 @@ module LOL
   module Api
     module Endpoints
       class Champion < LOL::Api::Endpoint
-        require "lol/api/request"
-
         attr_accessor :champion_id, :free_to_play
 
         def self.call(region:, champion_id: '', free_to_play: false)

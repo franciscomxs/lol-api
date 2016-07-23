@@ -3,8 +3,6 @@ module LOL
     module Endpoints
       class ChampionMastery
         class Champion < LOL::Api::Endpoint
-          require "lol/api/request"
-
           attr_accessor :summoner_id, :champion_id
 
           def self.call(region:, summoner_id:, champion_id:)
