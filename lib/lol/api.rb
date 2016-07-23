@@ -17,6 +17,7 @@ require "lol/api/endpoints/game"
 require "lol/api/endpoints/league/by_summoner"
 require "lol/api/endpoints/league/by_summoner/entry"
 require "lol/api/endpoints/league/challenger"
+require "lol/api/endpoints/league/master"
 
 module LOL
   module Api
