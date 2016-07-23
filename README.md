@@ -84,6 +84,30 @@ LOL::Api::Endpoints::CurrentGame.(region: region, summoner_id: summoner_id)
 LOL::Api::Endpoints::FeaturedGames.(region: region)
 ```
 
+#### Game
+
+```ruby
+LOL::Api::Endpoints::CurrentGame.(region: region, summoner_id: summoner_id)
+```
+
+#### League
+
+```ruby
+LOL::Api::Endpoints::League::BySummoner.(region: region, summoner_id: summoner_id)
+```
+
+```ruby
+LOL::Api::Endpoints::League::BySummoner::Entry.(region: region, summoner_id: summoner_id)
+```
+
+```ruby
+LOL::Api::Endpoints::League::Challenger.(region: region, type: type)
+```
+
+```ruby
+LOL::Api::Endpoints::League::Master.(region: region, type: type)
+```
+
 #### Summoner
 
 ```ruby
@@ -115,6 +139,18 @@ We need to set the API_KEY to run the specs. To do so, just run:
     $ API_KEY=YOUR_API_KEY rspec
 
 After this, take a look on test coverage (report will be available on coverage/index.html). We intent to keep a 100% test coverage.
+
+
+# Todo:
+
+- Implement the following methods/endpoints:
+
+```ruby
+LOL::Api::Endpoints::League::ByTeam
+LOL::Api::Endpoints::League::ByTeam::Entry
+```
+
+- Add validations to all params
 
 ## Contributing
 
