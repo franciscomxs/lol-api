@@ -5,7 +5,7 @@ module LOL
         class TopChampions < LOL::Api::Endpoint
           require "lol/api/request"
 
-          attr_accessor :region, :summoner_id, :count
+          attr_accessor :summoner_id, :count
 
           def self.call(region:, summoner_id:, count: false)
             new(region: region, summoner_id: summoner_id, count: count).data
@@ -13,10 +13,6 @@ module LOL
 
           def initialize(region:, summoner_id:, count: false)
             @region, @summoner_id, @count = region, summoner_id, count
-          end
-
-          def data
-            LOL::Api::Request.(endpoint)
           end
 
           def endpoint

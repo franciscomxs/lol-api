@@ -4,7 +4,7 @@ module LOL
       class Champion < LOL::Api::Endpoint
         require "lol/api/request"
 
-        attr_accessor :region, :champion_id, :free_to_play
+        attr_accessor :champion_id, :free_to_play
 
         def self.call(region:, champion_id: '', free_to_play: false)
           new(region: region, champion_id: champion_id, free_to_play: free_to_play).data
@@ -12,10 +12,6 @@ module LOL
 
         def initialize(region:, champion_id: '', free_to_play: false)
           @region, @champion_id, @free_to_play = region, champion_id, free_to_play
-        end
-
-        def data
-          LOL::Api::Request.(endpoint)
         end
 
         private

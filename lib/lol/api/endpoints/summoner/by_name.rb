@@ -5,7 +5,7 @@ module LOL
         class ByName < LOL::Api::Endpoint
           require "lol/api/request"
 
-          attr_accessor :region, :summoner_names
+          attr_accessor :summoner_names
 
           def self.call(region:, summoner_names:)
             new(region: region, summoner_names: summoner_names).data
@@ -13,10 +13,6 @@ module LOL
 
           def initialize(region:, summoner_names:)
             @region, @summoner_names = region, summoner_names
-          end
-
-          def data
-            LOL::Api::Request.(endpoint)
           end
 
           def endpoint

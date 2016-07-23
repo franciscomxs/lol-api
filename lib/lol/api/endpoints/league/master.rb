@@ -5,7 +5,7 @@ module LOL
         class Master < LOL::Api::Endpoint
           require "lol/api/request"
 
-          attr_accessor :region, :type
+          attr_accessor :type
 
           def self.call(region:, type:)
             new(region: region, type: type).data
@@ -13,10 +13,6 @@ module LOL
 
           def initialize(region:, type:)
             @region, @type = region, type
-          end
-
-          def data
-            LOL::Api::Request.(endpoint)
           end
 
           private
