@@ -3,15 +3,9 @@ module LOL
     module Endpoints
       class ChampionMastery
         class TopChampions < LOL::Api::Endpoint
-          attr_accessor :summoner_id, :count
+          attrs :region, :summoner_id, :count
 
-          def self.call(region:, summoner_id:, count: false)
-            new(region: region, summoner_id: summoner_id, count: count).data
-          end
-
-          def initialize(region:, summoner_id:, count: false)
-            @region, @summoner_id, @count = region, summoner_id, count
-          end
+          private
 
           def endpoint
             "/championmastery/location/#{normalized_region}/player/#{summoner_id}/topchampions?#{query}"

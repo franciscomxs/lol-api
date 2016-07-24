@@ -2,13 +2,7 @@ module LOL
   module Api
     module Endpoints
       class FeaturedGames < LOL::Api::Endpoint
-        def self.call(region:)
-          new(region: region).data
-        end
-
-        def initialize(region:)
-          @region = region
-        end
+        attrs :region
 
         private
 

@@ -3,15 +3,9 @@ module LOL
     module Endpoints
       class ChampionMastery
         class Score < LOL::Api::Endpoint
-          attr_accessor :summoner_id
+          attrs :region, :summoner_id
 
-          def self.call(region:, summoner_id:)
-            new(region: region, summoner_id: summoner_id).data
-          end
-
-          def initialize(region:, summoner_id:)
-            @region, @summoner_id = region, summoner_id
-          end
+          private
 
           def endpoint
             "/championmastery/location/#{normalized_region}/player/#{summoner_id}/score?#{query}"

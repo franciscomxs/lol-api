@@ -7,12 +7,12 @@ describe LOL::Api::Endpoints::ChampionMastery::TopChampions do
 
   describe '.call' do
     before do
-      allow_any_instance_of(LOL::Api::Endpoints::ChampionMastery::TopChampions).to receive(:data).with(region: region, summoner_id: summoner_id).and_return({})
+      allow_any_instance_of(LOL::Api::Endpoints::ChampionMastery::TopChampions).to receive(:data).with(region: region, summoner_id: summoner_id, count: count).and_return({})
     end
 
     it 'is a alias for #data' do
       expect_any_instance_of(LOL::Api::Endpoints::ChampionMastery::TopChampions).to receive(:data)
-      LOL::Api::Endpoints::ChampionMastery::TopChampions.(region: region, summoner_id: summoner_id)
+      LOL::Api::Endpoints::ChampionMastery::TopChampions.(region: region, summoner_id: summoner_id, count: count)
     end
   end
 

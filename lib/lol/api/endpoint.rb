@@ -2,8 +2,6 @@ module LOL
   module Api
     class Endpoint
 
-      attr_accessor :region
-
       URL = {
         br: 'https://br.api.pvp.net',
         eune: 'https://eune.api.pvp.net',
@@ -47,6 +45,24 @@ module LOL
         ru: 'ru',
         tr: 'tr1'
       }
+
+      def self.attrs(*attrs)
+        attrs.each { |attr| self.send(:attr_accessor, attr) }
+        keyword_arguments = attrs.map { |attr| "#{attr.to_s}:" }.join(', ')
+        arguments = attrs.map { |attr| "#{attr.to_s}: #{attr}.to_s" }.join(', ')
+        instance_variables = attrs.map { |attr| "@#{attr}" }.join(', ')
+        values = attrs.map { |attr| attr }.join(', ')
+
+        class_eval <<-EOF
+          def self.call(#{keyword_arguments})
+            new(#{arguments}).data
+          end
+
+          def initialize(#{keyword_arguments})
+            #{instance_variables} = #{values}
+          end
+        EOF
+      end
 
       def data
         LOL::Api::Request.(url)

@@ -3,15 +3,7 @@ module LOL
     module Endpoints
       module League
         class Challenger < LOL::Api::Endpoint
-          attr_accessor :type
-
-          def self.call(region:, type:)
-            new(region: region, type: type).data
-          end
-
-          def initialize(region:, type:)
-            @region, @type = region, type
-          end
+          attrs :region, :type
 
           private
 

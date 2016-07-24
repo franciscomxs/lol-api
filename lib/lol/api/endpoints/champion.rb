@@ -2,15 +2,7 @@ module LOL
   module Api
     module Endpoints
       class Champion < LOL::Api::Endpoint
-        attr_accessor :champion_id, :free_to_play
-
-        def self.call(region:, champion_id: '', free_to_play: false)
-          new(region: region, champion_id: champion_id, free_to_play: free_to_play).data
-        end
-
-        def initialize(region:, champion_id: '', free_to_play: false)
-          @region, @champion_id, @free_to_play = region, champion_id, free_to_play
-        end
+        attrs :region, :champion_id, :free_to_play
 
         private
 
