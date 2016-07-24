@@ -1,7 +1,7 @@
 module LOL
-  module Api
+  module API
     class Summoner
-      class Masteries < LOL::Api::Endpoint
+      class Masteries < LOL::API::Endpoint
         attrs :region, :summoner_ids
 
         private

@@ -1,6 +1,6 @@
 module LOL
-  module Api
-    class Champion < LOL::Api::Endpoint
+  module API
+    class Champion < LOL::API::Endpoint
       attrs :region, :champion_id, :free_to_play
 
       private

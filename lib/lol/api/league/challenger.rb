@@ -1,7 +1,7 @@
 module LOL
-  module Api
+  module API
     module League
-      class Challenger < LOL::Api::Endpoint
+      class Challenger < LOL::API::Endpoint
         attrs :region, :type
 
         private

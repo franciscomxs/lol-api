@@ -5,7 +5,7 @@ require 'lol/api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "lol-api"
-  spec.version       = LOL::Api::VERSION
+  spec.version       = LOL::API::VERSION
   spec.authors       = ["Francisco Martins"]
   spec.email         = ["franciscomxs@gmail.com"]
 

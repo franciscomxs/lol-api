@@ -1,5 +1,5 @@
 module LOL
-  module Api
+  module API
     class Response
       require 'active_support/core_ext/object/blank'
       require 'active_support/json/decoding'

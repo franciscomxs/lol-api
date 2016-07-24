@@ -1,7 +1,7 @@
 module LOL
-  module Api
+  module API
     module League
-      class Master < LOL::Api::Endpoint
+      class Master < LOL::API::Endpoint
         attrs :region, :type
 
         private

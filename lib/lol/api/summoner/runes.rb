@@ -1,7 +1,7 @@
 module LOL
-  module Api
+  module API
     class Summoner
-      class Runes < LOL::Api::Endpoint
+      class Runes < LOL::API::Endpoint
         attrs :region, :summoner_ids
 
         private

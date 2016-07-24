@@ -24,7 +24,7 @@ require "lol/api/league/challenger"
 require "lol/api/league/master"
 
 module LOL
-  module Api
+  module API
     class << self
       attr_accessor :configuration
       def configure

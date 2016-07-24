@@ -1,5 +1,5 @@
 module LOL
-  module Api
+  module API
     class Endpoint
 
       URL = {
@@ -65,7 +65,7 @@ module LOL
       end
 
       def data
-        LOL::Api::Request.(url)
+        LOL::API::Request.(url)
       end
 
       def url
@@ -85,7 +85,7 @@ module LOL
       end
 
       def params
-        { api_key: LOL::Api.configuration.api_key }
+        { api_key: LOL::API.configuration.api_key }
       end
 
       def query

@@ -1,7 +1,7 @@
 module LOL
-  module Api
+  module API
     class ChampionMastery
-      class Champions < LOL::Api::Endpoint
+      class Champions < LOL::API::Endpoint
         attrs :region, :summoner_id
 
         private

@@ -1,5 +1,5 @@
 module LOL
-  module Api
+  module API
     class Request
       require 'httparty'
       require 'lol/api/response'
@@ -16,7 +16,7 @@ module LOL
 
       def response
         res = HTTParty.get(url)
-        LOL::Api::Response.new(res.code, res.body)
+        LOL::API::Response.new(res.code, res.body)
       end
     end
   end

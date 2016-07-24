@@ -1,6 +1,6 @@
 module LOL
-  module Api
-    class Summoner < LOL::Api::Endpoint
+  module API
+    class Summoner < LOL::API::Endpoint
       attrs :region, :summoner_ids
 
       private

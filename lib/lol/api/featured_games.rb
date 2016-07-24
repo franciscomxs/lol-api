@@ -1,6 +1,6 @@
 module LOL
-  module Api
-    class FeaturedGames < LOL::Api::Endpoint
+  module API
+    class FeaturedGames < LOL::API::Endpoint
       attrs :region
 
       private
