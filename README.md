@@ -43,87 +43,87 @@ You can get your `API_KEY` here: https://developer.riotgames.com/
 #### Champion
 
 ```ruby
-LOL::Api::Endpoints::Champion.(region: region)
+LOL::Api::Champion.(region: region)
 ```
 
 ```ruby
-LOL::Api::Endpoints::Champion.(region: region, champion_id: champion_id)
+LOL::Api::Champion.(region: region, champion_id: champion_id)
 ```
 
 ```ruby
-LOL::Api::Endpoints::Champion.(region: region, free_to_play: true)
+LOL::Api::Champion.(region: region, free_to_play: true)
 ```
 
 #### Champion Mastery
 
 ```ruby
-LOL::Api::Endpoints::ChampionMastery::Champion.(region: region, summoner_id: summoner_id, champion_id: champion_id)
+LOL::Api::ChampionMastery::Champion.(region: region, summoner_id: summoner_id, champion_id: champion_id)
 ```
 
 ```ruby
-LOL::Api::Endpoints::ChampionMastery::Champions.(region: region, summoner_id: summoner_id)
+LOL::Api::ChampionMastery::Champions.(region: region, summoner_id: summoner_id)
 ```
 
 ```ruby
-LOL::Api::Endpoints::ChampionMastery::Score.(region: region, summoner_id: summoner_id)
+LOL::Api::ChampionMastery::Score.(region: region, summoner_id: summoner_id)
 ```
 
 ```ruby
-LOL::Api::Endpoints::ChampionMastery::TopChampions.(region: region, summoner_id: summoner_id)
+LOL::Api::ChampionMastery::TopChampions.(region: region, summoner_id: summoner_id)
 ```
 
 #### Current Game
 
 ```ruby
-LOL::Api::Endpoints::CurrentGame.(region: region, summoner_id: summoner_id)
+LOL::Api::CurrentGame.(region: region, summoner_id: summoner_id)
 ```
 
 #### Featured Games
 
 ```ruby
-LOL::Api::Endpoints::FeaturedGames.(region: region)
+LOL::Api::FeaturedGames.(region: region)
 ```
 
 #### Game
 
 ```ruby
-LOL::Api::Endpoints::CurrentGame.(region: region, summoner_id: summoner_id)
+LOL::Api::CurrentGame.(region: region, summoner_id: summoner_id)
 ```
 
 #### League
 
 ```ruby
-LOL::Api::Endpoints::League::BySummoner.(region: region, summoner_id: summoner_id)
+LOL::Api::League::BySummoner.(region: region, summoner_id: summoner_id)
 ```
 
 ```ruby
-LOL::Api::Endpoints::League::BySummoner::Entry.(region: region, summoner_id: summoner_id)
+LOL::Api::League::BySummoner::Entry.(region: region, summoner_id: summoner_id)
 ```
 
 ```ruby
-LOL::Api::Endpoints::League::Challenger.(region: region, type: type)
+LOL::Api::League::Challenger.(region: region, type: type)
 ```
 
 ```ruby
-LOL::Api::Endpoints::League::Master.(region: region, type: type)
+LOL::Api::League::Master.(region: region, type: type)
 ```
 
 #### Summoner
 
 ```ruby
-LOL::Api::Endpoints::Summoner.(region: region, summoner_id: summoner_id)
+LOL::Api::Summoner.(region: region, summoner_id: summoner_id)
 ```
 
 ```ruby
-LOL::Api::Endpoints::Summoner::ByName.(region: region, summoner_name: summoner_name)
+LOL::Api::Summoner::ByName.(region: region, summoner_name: summoner_name)
 ```
 
 ```ruby
-LOL::Api::Endpoints::Summoner::Masteries.(region: region, summoner_ids: summoner_ids)
+LOL::Api::Summoner::Masteries.(region: region, summoner_ids: summoner_ids)
 ```
 
 ```ruby
-LOL::Api::Endpoints::Summoner::Runes.(region: region, summoner_ids: summoner_ids)
+LOL::Api::Summoner::Runes.(region: region, summoner_ids: summoner_ids)
 ```
 
 ## Development
@@ -146,8 +146,8 @@ After this, take a look on test coverage (report will be available on coverage/i
 - Implement the following methods/endpoints:
 
 ```ruby
-LOL::Api::Endpoints::League::ByTeam
-LOL::Api::Endpoints::League::ByTeam::Entry
+LOL::Api::League::ByTeam
+LOL::Api::League::ByTeam::Entry
 ```
 
 - Add validations to all params
